@@ -36,7 +36,6 @@ header{
     padding: 0%;
     margin: 0%;
     align-items: center;
-    font-weight: lighter;
     /* outline: auto; */
 }
 
@@ -46,6 +45,7 @@ header{
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: 'ancient geek';
 }
 
 a{
@@ -62,6 +62,7 @@ main{
 
 .facecard{
     display: flex;
+    flex-direction: column;
     height: 600px;
     background-color: #1f2937;
     /* outline: auto; */
@@ -86,6 +87,24 @@ main{
     justify-content: space-between;
 }
 
+.attr-facecard{
+    /* outline: auto; */
+    /* display: flex; */
+    margin-top: -26px;
+    margin-right: 16px;
+    text-align: end;
+    justify-content: end;
+    width: auto;
+    font-size: 10px;
+    color: #e5e7eb;
+}
+
+p a{
+    color: #e5e7eb;
+    text-decoration: underline;
+    font-size: 10px;
+}
+
 .facecard img{
     display: flex;
     border-radius: 18px;
@@ -98,7 +117,7 @@ main{
     margin: 0;
     font-size: 48px;
     color: #f9faf8;
-    font-weight: 900;
+    font-weight: 600;
     /* outline: auto; */
 }
 
@@ -107,20 +126,19 @@ main{
     text-align: justify;
     font-size: 18px;
     color: #e5e7eb;
-    margin: 0;
+    margin-top: 6px;
 }
 
 .facecard-content a{
     display: flex;
     background-color: #e5e7eb;
-    color: #1f2937;
+    color: #000000;
     font-weight: 900;
     width: fit-content;
     border-radius: 12px;
     padding: 12px 22px;
     box-shadow: #e5e7eb 0px 0px 4px 0px;
-    margin-top: 12px;
-    border: #181f29 2.5px solid;
+    border: #181f29 2px solid;
 }
 
 .courses-card{
@@ -169,6 +187,7 @@ main{
 small a{
     text-shadow: #000000 0px 0px 0px;
     font-size: 11px;
+    text-decoration: underline;
     /* align-items: center; */
 }
 
@@ -182,15 +201,19 @@ small{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0%;
+    padding: 10px;
+    background-color: #1f2937;
+    border-radius: 16px;
     margin-top: 12px;
     margin-bottom: auto;
     font-size: 22px;
-    text-shadow: #000000 2px 2px 2px;
+    text-shadow: #000000 0px 4px 0px;
+    box-shadow: #000000 0px 12px 0px 0px;
 }
 
 .courses-description p{
     color: #1f2937;
+    margin-top: 22px;
 }
 
 .quote-card{
@@ -228,14 +251,15 @@ q{
 }
 
 .call-content{
-    background-color: #0ccf05;
+    background-color: #2559b9;
     display: flex;
     width: 1400px;
     height: 200px;
     justify-content: space-evenly;
     align-items: center;
-    outline: auto;
     color: #e5e7eb;
+    box-shadow: #3361b6 0px 16px 0px 0px;
+    border: #3e7ff7 16px solid;
     font-size: 3;
 }
 
@@ -246,7 +270,6 @@ q{
 
 .call-content a{
     display: flex;
-    outline: auto;
     padding: 0%;
     margin: 0%;
     font-weight: 900;
@@ -255,16 +278,44 @@ q{
     padding: 12px 22px;
     background-color: #e5e7eb;
     color: #1f2937;
-    box-shadow: rgb(255, 255, 255) 0px 0px 26px 0px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 12px 0px;
     border: #181f29 2px solid;
 }
 
 footer{
     background: #181f29;
     display: flex;
-    gap: 2px;
+    flex-direction: column;
+    gap: 18px;
+    width: auto;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
     color: #e5e7eb;
+}
+
+.footer-content{
+    display: flex;
+    gap: 2px;
+    /* font-family: 'ancient geek'; */
+    /* width: fit-content; */
+}
+
+footer a{
+    display: flex;
+    font-size: 12px;
+    text-decoration: underline white;
+    width: auto;
+}
+
+.mythology{
+    color: gold;
+    text-shadow: rgb(248, 50, 0) 0px 2px 2px ;
+}
+
+.atlas-logo{
+    display: flex;
+    font-family: 'ancient geek';
+    align-items: center;
+    /* justify-content: center; */
 }
